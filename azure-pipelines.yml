@@ -14,7 +14,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: ubuntu-latest
+      name: mypool  # Set the pool name to 'mypool'
     steps:
     - task: Docker@2
       displayName: Build an image
